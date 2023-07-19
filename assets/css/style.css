@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    list-style-type: none;
+    box-sizing: border-box;
+
+}
+
+.herosecbg {
+    background-image: url(../images/svg/herosectionbg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.job_bg {
+    background-image: url(../images/svg/jobimg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_footer {
+    background: rgba(50, 164, 245, 0.06);
+}
+
+:root {
+    --fs-xsm: 16px;
+    --fs-sm: 20px;
+    --fs-md: 24px;
+    --fs-lg: 32px;
+    --fs-2lg: 40px;
+    --fs-xl: 48px;
+    --fs-xxl: 54px;
+
+}
+
+
+.fs_xsm {
+    font-size: var(--fs-xsm);
+}
+
+.fs_sm {
+    font-size: var(--fs-sm);
+}
+
+.fs_md {
+    font-size: var(--fs-md);
+}
+
+.fs_lg {
+    font-size: var(--fs-lg);
+}
+
+.fs_2lg {
+    font-size: var(--fs-2lg);
+}
+
+.fs_xl {
+    font-size: var(--fs-xl);
+}
+
+.fs_xxl {
+    font-size: var(--fs-xxl);
+}
+
+.text_primary {
+    color: white;
+}
+
+.text_secondary {
+    color: rgba(51, 167, 249, 1);
+}
+
+.text_offwhite {
+    color: rgba(251, 251, 251, 1);
+
+}
+
+.ff_raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.mx_w792 {
+    max-width: 792px;
+}
+
+.mx_w305 {
+    max-width: 305px;
+}
+
+.mx_w580 {
+    max-width: 580px;
+}
+
+.space_nowrap {
+    white-space: nowrap;
+}
+
+/* btn classes */
+.wallet_btn {
+    border-radius: 100px;
+    background: #33A7F9;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 32px;
+}
+
+.join_btn {
+    border-radius: 100px;
+    background: #33A7F9;
+    box-shadow: 0px 0px 42px 0px rgba(51, 167, 249, 0.50);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 32px;
+    color: white;
+}
+
+.send_btn {
+    border-radius: 100px;
+    background: #33A7F9;
+    box-shadow: 0px 0px 42px 0px rgba(51, 167, 249, 0.50);
+    display: inline-flex;
+    padding: 18px 79px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* blur circles  */
+.blur_in_multi_chain {
+    border-radius: 279.954px;
+    background: #00A3FF;
+    filter: blur(150px);
+    width: 273.2px;
+    height: 279.954px;
+    flex-shrink: 0;
+    position: absolute;
+    left: -10%;
+}
+.blur_in_no_code {
+    border-radius: 279.954px;
+    background: #00A3FF;
+    filter: blur(150px);
+    width: 273.2px;
+    height: 279.954px;
+    flex-shrink: 0;
+    position: absolute;
+    left: -10%;
+    top: -10%;
+}
+.blur_in_no_codetwo {
+    border-radius: 279.954px;
+    background: #00A3FF;
+    filter: blur(150px);
+    width: 273.2px;
+    height: 279.954px;
+    flex-shrink: 0;
+    position: absolute;
+    right: -10%;
+    bottom: 10%;
+}
+.blur_in_infobar {
+    border-radius: 279.954px;
+    background: #00A3FF;
+    filter: blur(150px);
+    width: 273.2px;
+    height: 279.954px;
+    flex-shrink: 0;
+    position: absolute;
+    right: -10%;
+    top: -10%;
+}
+.blur_in_job_sec {
+    border-radius: 279.954px;
+    background: #00A3FF;
+    filter: blur(150px);
+    width: 273.2px;
+    height: 279.954px;
+    flex-shrink: 0;
+    position: absolute;
+    right: -10%;
+    top: -10%;
+}
+.blur_in_email_sec {
+    border-radius: 279.954px;
+    background: #00A3FF;
+    filter: blur(150px);
+    width: 273.2px;
+    height: 279.954px;
+    flex-shrink: 0;
+    position: absolute;
+    left: -10%;
+    top: -10%;
+}
+/* boxes classes  */
+
+.infobox {
+    border-radius: 10px;
+    background: rgba(51, 167, 249, 0.06);
+    padding: 80px 21px;
+}
+
+.job_boxes {
+    border-radius: 10px;
+    background: rgba(51, 167, 249, 0.06);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    display: flex;
+    gap: 25px;
+    padding: 38px 88px 38px 38px;
+}
+
+.emailbox {
+    border-radius: 12px;
+    border: 1px solid rgba(51, 167, 249, 0.18);
+    background: rgba(51, 167, 249, 0.10);
+    padding: 32px;
+}
+
+/* email section classes  */
+.fullname_input {
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(16px);
+    border: none;
+    outline: none;
+    display: flex;
+    width: 281px;
+    height: 49px;
+    padding: 0px 20px 0px 14px;
+    align-items: center;
+}
+
+textarea {
+    resize: none;
+    display: flex;
+    width: 100%;
+    height: 134px;
+    padding: 22.785px 476.995px 101.215px 14.005px;
+    align-items: center;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(16px);
+    overflow: hidden;
+    outline: none;
+    border: none;
+}
+
+#odd {
+    background-color: rgb(55, 255, 0);
+}
+
+/* accordion CLASSES  */
+.accordion-button {
+    color: white !important;
+    background: transparent !important;
+    border-radius: 6px !important;
+    border: none !important;
+    box-shadow: none !important;
+
+}
+
+.accordion-body {
+    background: transparent !important;
+    border-radius: 6px !important;
+    border: none !important;
+
+}
+
+.accordion-item {
+
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.20) !important;
+}
+
+.accordion-item :active {
+    border-radius: 6px;
+    border: 1px solid rgba(51, 167, 249, 0.40) !important;
+}
+
+.accordion {
+    --bs-accordion-color: var(--bs-body-color);
+    --bs-accordion-bg: none !important;
+    --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+    --bs-accordion-border-color: none !important;
+}
+
+.accordion-button::after {
+
+    background-image: url(../images/svg/accordian_icon.svg) !important;
+
+}
+
+#menubox {
+    display: none;
+}
+
+@media (max-width:992px) {
+    .nav_bar {
+        color: #FFFFFF;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background: black;
+        transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        z-index: 2;
+
+    }
+
+
+    label[for="menubox"] {
+        width: 35px;
+        height: 40px;
+        z-index: 3;
+
+        position: absolute;
+        right: 10px;
+        top: 25px;
+
+    }
+
+    label>span {
+        width: 100%;
+        height: 3px;
+        display: flex;
+        margin-bottom: 6px;
+        background: #458FF6;
+        border-radius: 20px;
+
+    }
+
+    #menubox:checked~.nav_bar {
+        left: 0;
+
+    }
+}
