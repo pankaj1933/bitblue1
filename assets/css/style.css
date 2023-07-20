@@ -25,7 +25,8 @@
 .bg_footer {
     background: rgba(50, 164, 245, 0.06);
 }
-.bg_preloader{
+
+.bg_preloader {
     background-image: url(../images/png/preloader.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,14 +110,18 @@
 .wallet_btn {
     border-radius: 100px;
     background: #33A7F9;
+    border: 1px solid #33A7F9;
+    color: #FFF;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 18px 32px;
-    transition: all 0.3s linear;
+    padding: 17px 31px;
+    transition: all 0.3s ease-in-out;
 }
-.wallet_btn:hover{
-   
+
+.wallet_btn:hover {
+    color: #33A7F9;
+    background-color: #FFF;
     transform: translateY(-2px);
 }
 
@@ -131,7 +136,8 @@
     color: white;
     transition: all 0.3s linear;
 }
-.join_btn:hover{
+
+.join_btn:hover {
     transform: translateY(-2px);
     box-shadow: 0px 0px 42px 0px rgba(51, 167, 249, 0.50);
 }
@@ -147,47 +153,55 @@
     color: white;
     transition: all 0.3s linear;
 }
-.send_btn:hover{
+
+.send_btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0px 0px 42px 0px rgba(51, 167, 249, 0.50)
+    box-shadow: 0px 0px 42px 0px rgba(51, 167, 249, 0.50);
 }
+
 
 /* blur circles  */
 .blur_in_multi_chain {
-    
+
     position: absolute;
     left: 0;
     top: -50%;
 }
+
 .blur_in_no_code {
-   
+
     position: absolute;
     left: 0;
     top: -50%;
 }
+
 .blur_in_no_codetwo {
 
     position: absolute;
     right: 0;
     bottom: -50%;
 }
+
 .blur_in_infobar {
     position: absolute;
     right: 0;
     top: -75%;
 }
+
 .blur_in_job_sec {
-   
+
     position: absolute;
     right: 0;
     top: -40%;
 }
+
 .blur_in_email_sec {
-  
+
     position: absolute;
     left: 0;
     top: -50%;
 }
+
 /* boxes classes  */
 
 .infobox {
@@ -195,12 +209,13 @@
     background: rgba(51, 167, 249, 0.06);
     padding: 80px 21px;
     transition: all 0.3s linear;
+    border: 1px transparent;
 }
-.infobox:hover{
-    border: 1px solid rgba(51, 167, 249, 0.18);
-    background: rgba(51, 167, 249, 0.10);
-    transform: translateY(-5px);
-    box-shadow: 0px 0px 42px 0px rgba(51, 167, 249, 0.50)
+
+.infobox:hover {
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, #33A7F9 0%, rgba(51, 167, 249, 0.45) 63.02%, rgba(51, 167, 249, 0) 100%);
+    border-image-slice: 1;
 }
 
 .job_boxes {
@@ -213,7 +228,8 @@
     padding: 38px 88px 38px 38px;
     transition: all 0.3s linear;
 }
-.job_boxes:hover{
+
+.job_boxes:hover {
     transform: scale(1.01);
     box-shadow: 0px 0px 42px 0px rgba(51, 167, 249, 0.50)
 }
@@ -223,6 +239,61 @@
     border: 1px solid rgba(51, 167, 249, 0.18);
     background: rgba(51, 167, 249, 0.10);
     padding: 32px;
+    transition: all 0.3s linear;
+}
+
+.emailbox:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 42px 0px rgba(51, 167, 249, 0.50)
+}
+
+.iphoneposition {
+    left: 15%;
+    top: 9%;
+    width: 19%;
+    animation: zigzag 5s linear 2s infinite alternate;
+
+}
+
+@keyframes zigzag {
+    0% {
+        transform: rotate(2deg);
+    }
+
+    25% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-2deg);
+    }
+
+    75% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(2deg);
+    }
+
+}
+
+.small_icon {
+    left: 36%;
+    top: 25%;
+    opacity: 0.3;
+}
+
+.small_icon1 {
+    left: 55%;
+    top: 14%;
+    opacity: 0.3;
+}
+
+.small_icon2 {
+    left: 50%;
+    top: 57%;
+
 }
 
 /* email section classes  */
@@ -239,6 +310,14 @@
     align-items: center;
 }
 
+input {
+    font-family: Raleway;
+    font-size: var(--fs-xsm);
+    font-weight: 400;
+    color: #FFF;
+    opacity: 0.5;
+}
+
 textarea {
     resize: none;
     display: flex;
@@ -252,7 +331,13 @@ textarea {
     overflow: hidden;
     outline: none;
     border: none;
+    font-family: Raleway;
+    font-size: var(--fs-xsm);
+    font-weight: 400;
+    color: #FFF;
+    opacity: 0.5;
 }
+
 #scrollBtn {
     display: none;
     position: fixed;
@@ -267,6 +352,7 @@ textarea {
     padding: 19px 20px;
     border-radius: 56px;
 }
+
 .linebox {
     height: 40px;
     width: 40px;
@@ -286,25 +372,45 @@ nav .linebox span {
     background-color: #fff;
 
 }
-.nav_li{
+
+.nav_li {
+    transition: all 0.3s linear;
+    position: relative;
+}
+
+.nav_li:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 15px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: rgba(51, 167, 249, 0.50);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav_li:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.footer_media {
     transition: all 0.3s linear;
 }
-.nav_li:hover{
-    transform: translateY(-2px);
-    font-weight: 800;
-}
-.footer_media{
-    transition: all 0.3s linear;
-}
-.footer_media:hover{
+
+.footer_media:hover {
     transform: translateY(-2px);
     box-shadow: 0px 0px 42px 0px rgba(51, 167, 249, 0.50)
 }
+
 .footer_li {
     transition: all 0.3s linear;
     cursor: pointer;
 }
-.footer_li:hover{
+
+.footer_li:hover {
     color: blue;
     transform: translateY(-2px);
     font-weight: 800;
@@ -371,8 +477,19 @@ nav .linebox span {
 
 }
 
-#menubox {
-    display: none;
+
+.footer_upperline {
+    position: relative;
+}
+
+.footer_upperline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 27px;
+    height: 1.1px;
+    width: 100%;
+    background-color: #FFF;
 }
 
 @media (max-width:992px) {
@@ -402,5 +519,24 @@ nav .linebox span {
     .show {
         left: 0;
 
+    }
+    .small_icon {
+       display: none;
+    }
+    
+    .small_icon1 {
+       display: none;
+    }
+    
+    .small_icon2 {
+      display: none;
+    
+    }
+    :root {
+       
+        --fs-2lg: 38px;
+        --fs-xl: 44px;
+        --fs-xxl: 48px;
+    
     }
 }

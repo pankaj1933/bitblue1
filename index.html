@@ -9,14 +9,18 @@
     <!-- bootstrap link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-         <!-- aos link  -->
+    <!-- aos link  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css link  -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- animate css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body class="bg-black overflow-x-hidden">
     <button onclick="topFunction()" class="fw-normal fs_smm  ff-google-sans" id="scrollBtn" title="Go to top"><img
-            src="./assets/images/svg/toparrow.svg" alt=""></button>
+            src="./assets/images/svg/toparrow.svg" alt="#"></button>
     <div class="overflow-hidden">
         <div id="preloader"
             class="min-vh-100 d-flex align-items-center bg_preloader justify-content-center  position-fixed w-100 top-0 start-0 z-3 preloader-transition">
@@ -28,7 +32,7 @@
                 <nav class="d-flex  justify-content-between  align-items-center pt-3">
                     <a class="fs_lg text_primary fw-bold ff_raleway" href="#">bit<span
                             class="text_secondary">blue</span></a>
-                    
+
                     <ul class="d-flex gap-5 nav_bar overflow-hidden pt-3" id="nav_click">
                         <li class="pt-3 nav_li"><a class="ff_raleway fs_xsm fw-normal text_offwhite " href="#">
                                 Litepaper
@@ -39,7 +43,7 @@
                         <li class="pt-3 nav_li"><a class="ff_raleway fs_xsm fw-normal text_offwhite " href="#">
                                 About us
                             </a></li>
-                        <li><a class="ff_raleway fs_xsm fw-normal text_primary wallet_btn" href="#">
+                        <li><a class="ff_raleway fs_xsm fw-normal  wallet_btn" href="#">
                                 Connect Wallet
                             </a></li>
                     </ul>
@@ -59,18 +63,31 @@
             <p class="d-flex justify-content-center ff_raleway fs_xsm fw-normal text_offwhite">Enabling IOT
                 Machine-to-machine micro-transactions on the blockchain</p>
             <div class="d-flex justify-content-center align-items-center">
-                <img class="w-100" src="./assets/images/svg/heroimg.svg" alt="">
+                <div class="position-relative">
+                    <img class="w-100" src="./assets/images/svg/heroimg.svg" alt="#">
+                    <span> <img class=" position-absolute z-1 iphoneposition" src="./assets/images/svg/iphone.svg"
+                            alt="#"></span>
+                    <span><img
+                            class="position-absolute animate__animated animate__pulse animate__infinite z-1 small_icon"
+                            src="./assets/images/svg/camera.svg" alt="#"></span>
+                    <span><img
+                            class="position-absolute z-1 small_icon1 animate__animated animate__pulse animate__infinite"
+                            src="./assets/images/svg/desktop.svg" alt="#"></span>
+                    <span><img
+                            class="position-absolute z-1 small_icon2 animate__animated animate__pulse animate__infinite"
+                            src="./assets/images/svg/board.svg" alt="#"></span>
+                </div>
             </div>
         </header>
         <main class="position-relative">
-            <div class="blur_in_infobar"><img class=" w-100" src="./assets/images/svg/blur_right.svg" alt=""></div>
+            <div class="blur_in_infobar"><img class=" w-100" src="./assets/images/svg/blur_right.svg" alt="#"></div>
             <!-- INFOBOXES STARTS HERE  -->
             <div class="container-xxl pt-5">
                 <h2 class="fw-semibold fs_xl ff_raleway text_primary d-flex justify-content-center pb-5">
                     Our <span class="fst-italic text_secondary fw-normal px-lg-3"> App </span> lets you do
                 </h2>
                 <div class="row pb-5">
-                    <div class="col-lg-4" data-aos="flip-left"   data-aos-duration="3000">
+                    <div class="col-lg-4" data-aos="flip-left" data-aos-duration="3000">
                         <div class="infobox mt-3 mt-lg-0">
                             <div class="infosvg d-flex justify-content-center pb-4">
                                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
@@ -88,7 +105,7 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-4" data-aos="flip-left"   data-aos-duration="3000">
+                    <div class="col-lg-4" data-aos="flip-left" data-aos-duration="3000">
                         <div class="infobox mt-3 mt-lg-0">
                             <div class="infosvg d-flex justify-content-center pb-4">
                                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
@@ -115,7 +132,7 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-4" data-aos="flip-left"   data-aos-duration="3000">
+                    <div class="col-lg-4" data-aos="flip-left" data-aos-duration="3000">
                         <div class="infobox mt-3 mt-lg-0">
                             <div class="infosvg d-flex justify-content-center pb-4">
                                 <svg width="42" height="36" viewBox="0 0 42 36" fill="none"
@@ -139,11 +156,11 @@
             </div>
         </main>
         <section class="position-relative">
-            <div class="blur_in_multi_chain"><img class="w-100" src="./assets/images/svg/blur_left.svg" alt=""></div>
+            <div class="blur_in_multi_chain"><img class="w-100" src="./assets/images/svg/blur_left.svg" alt="#"></div>
             <!-- MULTI CHAIN SECTION STARTS HERE  -->
             <div class="container-xxl pt-5 mt-5">
                 <div class="row  align-items-center">
-                    <div class="col-lg-6" data-aos="fade-up-right"   data-aos-duration="3000">
+                    <div class="col-lg-6" data-aos="fade-up-right" data-aos-duration="3000">
                         <h3 class="fw-semibold fs_xl ff_raleway text_primary pb-1">Enables devices to talk to <span
                                 class="fst-italic text_secondary fw-normal"> multi-chains</span></h3>
                         <p class="ff_raleway fs_xsm fw-normal text_offwhite pb-4">Vitae ornare proin vitae nulla
@@ -154,21 +171,21 @@
                             et quisque lacus turpis aliquam.</p>
                         <a class="join_btn " href="#">Join Now</a>
                     </div>
-                    <div class="col-lg-6"data-aos="fade-up-left"   data-aos-duration="3000">
-                        <img class="w-100" src="./assets/images/png/multi_chains.png" alt="">
+                    <div class="col-lg-6" data-aos="fade-up-left" data-aos-duration="3000">
+                        <img class="w-100" src="./assets/images/png/multi_chains.png" alt="#">
                     </div>
                 </div>
             </div>
         </section>
         <!-- JOB SECTION STARTS HERE  -->
         <section class="job_bg position-relative">
-            <div class="blur_in_job_sec"><img class=" w-100" src="./assets/images/svg/blur_right.svg" alt=""></div>
+            <div class="blur_in_job_sec"><img class=" w-100" src="./assets/images/svg/blur_right.svg" alt="#"></div>
             <div class="container-xxl py-5 ">
                 <div class="row py-5  align-items-center">
-                    <div  data-aos="fade-down-right"   data-aos-duration="3000" class="col-lg-6 pt-5 mt-5">
+                    <div data-aos="fade-down-right" data-aos-duration="3000" class="col-lg-6 pt-5 mt-5">
                         <div class="job_boxes">
-                            <img src="./assets/images/svg/goodtick.svg" alt="">
-                            <div class="">
+                            <img src="./assets/images/svg/goodtick.svg" alt="#">
+                            <div class="pt-1">
                                 <h4 class="fs_md fw-semibold ff_raleway text_primary">Simplicity and ease of use</h4>
                                 <p class="fs_xsm fw-normal ff_raleway text_offwhite">Cannot run a full node. Need a
                                     gateway
@@ -176,8 +193,8 @@
                             </div>
                         </div>
                         <div class="job_boxes mt-3">
-                            <img src="./assets/images/svg/growth.svg" alt="">
-                            <div class="">
+                            <img src="./assets/images/svg/growth.svg" alt="#">
+                            <div class="pt-1">
                                 <h4 class="fs_md fw-semibold ff_raleway text_primary ">High-throughput micropayments
                                 </h4>
                                 <p class="fs_xsm fw-normal ff_raleway text_offwhite">Proliferation of Internet of Things
@@ -185,7 +202,7 @@
                             </div>
                         </div>
                     </div>
-                    <div  data-aos="fade-down-left"   data-aos-duration="3000" class="col-lg-6 pt-5 mt-5">
+                    <div data-aos="fade-down-left" data-aos-duration="3000" class="col-lg-6 pt-5 mt-5">
                         <h4 class="fw-semibold fs_xl ff_raleway text_primary ps-5 ">We do the <span
                                 class="fst-italic text_secondary fw-normal">toughest job</span> for you...</h4>
                         <p class="ff_raleway fw-semibold fs_xsm text_offwhite ps-5"> You build your Dapps while we do
@@ -205,23 +222,23 @@
         </section>
         <!-- NO CODE SECTION STARTS HERE  -->
         <section class="position-relative">
-            <div class="blur_in_no_code"><img class="w-100" src="./assets/images/svg/blur_left.svg" alt=""></div>
-            <div class="blur_in_no_codetwo"> <img class=" w-100" src="./assets/images/svg/blur_right.svg" alt=""></div>
+            <div class="blur_in_no_code"><img class="w-100" src="./assets/images/svg/blur_left.svg" alt="#"></div>
+            <div class="blur_in_no_codetwo"> <img class=" w-100" src="./assets/images/svg/blur_right.svg" alt="#"></div>
             <div class="container-xxl pt-5">
                 <h5 class="fw-semibold fs_xl ff_raleway text_primary mx_w580 text-center m-auto">Low-code and <span
                         class="fst-italic text_secondary fw-normal">No-code</span> SDKs for MachineFi</h5>
                 <div class="row align-items-center">
-                    <div  data-aos="fade-down-right"   data-aos-duration="3000" class="col-lg-6">
-                        <img class="w-100" src="./assets/images/png/nocodesec.png" alt="">
+                    <div data-aos="fade-down-right" data-aos-duration="3000" class="col-lg-6">
+                        <img class="w-100" src="./assets/images/png/nocodesec.png" alt="#">
                     </div>
-                    <div  data-aos="fade-down-left"   data-aos-duration="3000" class="col-lg-6">
+                    <div data-aos="fade-down-left" data-aos-duration="3000" class="col-lg-6">
                         <div class="ps-5">
-                            <img src="./assets/images/svg/rotate.svg" alt="">
+                            <img src="./assets/images/svg/rotate.svg" alt="#">
                             <p class="ff_raleway fw-semibold fs_md text_primary">Blockchain enabled backend platform for
                                 embedded devices</p>
                         </div>
                         <div class=" ps-5 pt-5">
-                            <img src="./assets/images/svg/team.svg" alt="">
+                            <img src="./assets/images/svg/team.svg" alt="#">
                             <p class="ff_raleway fw-semibold fs_md text_primary">Client SDKs</p>
                         </div>
                     </div>
@@ -232,8 +249,8 @@
         <!-- FAQ ACCORDIAN SECTION STARTS HERE  -->
         <section>
             <div class="container-xxl">
-                <h5 class="ff_raleway fs_2lg fw-semibold text_primary justify-content-center d-flex">FAQs</h5>
-                <div  data-aos="zoom-out-down"   data-aos-duration="3000" class="accordion" id="accordionExample">
+                <h5 class="ff_raleway fs_2lg fw-semibold text_primary justify-content-center d-flex pb-3">FAQs</h5>
+                <div data-aos="zoom-out-down" data-aos-duration="3000" class="accordion" id="accordionExample">
                     <div class="accordion-item mt-1">
                         <h2 class="accordion-header ff_raleway text_primary fs_sm fw-semibold" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -326,17 +343,17 @@
         </section>
         <!-- EMAIL SECTION STARTS HERE  -->
         <section class="position-relative">
-            <div class="blur_in_email_sec"><img class="w-100" src="./assets/images/svg/blur_left.svg" alt=""></div>
+            <div class="blur_in_email_sec"><img class="w-100" src="./assets/images/svg/blur_left.svg" alt="#"></div>
 
             <div class="container-xxl py-5 mt-5">
                 <h6 class="ff_raleway fs_xl fw-semibold text_primary justify-content-center d-flex pb-5"><span
                         class="text_secondary pe-2 fst-italic fw-normal">Engage </span> with us</h6>
 
                 <div class="row pt-5 justify-content-between">
-                    <div data-aos="zoom-out-right"   data-aos-duration="3000" class="col-lg-4">
+                    <div data-aos="zoom-out-right" data-aos-duration="3000" class="col-lg-4">
                         <div class="emailbox">
                             <div class="d-flex align-items-start ">
-                                <img src="./assets/images/svg/email.svg" alt="">
+                                <img src="./assets/images/svg/email.svg" alt="#">
                                 <div class="ps-3">
                                     <p class="mb-0 ff_raleway fs_sm fw-semibold text_offwhite">Email us</p>
                                     <p class="mb-0 ff_raleway fs_xsm fw-normal text_offwhite pt-1">Example@bitblue.in
@@ -344,14 +361,14 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-start pt-4">
-                                <img src="./assets/images/svg/phone.svg" alt="">
+                                <img src="./assets/images/svg/phone.svg" alt="#">
                                 <div class="ps-3">
                                     <p class="mb-0 ff_raleway fs_sm fw-semibold text_offwhite">Phone</p>
                                     <p class="mb-0 ff_raleway fs_xsm fw-normal text_offwhite pt-1">+1 1223-482-33</p>
                                 </div>
                             </div>
                             <div class="d-flex align-items-start pt-4">
-                                <img src="./assets/images/svg/address.svg" alt="">
+                                <img src="./assets/images/svg/address.svg" alt="#">
                                 <div class="ps-3">
                                     <p class="mb-0 ff_raleway fs_sm fw-semibold text_offwhite">Address</p>
                                     <p class="mb-0 ff_raleway fs_xsm fw-normal text_offwhite pt-1">In convallis pretium
@@ -362,24 +379,24 @@
                             </div>
                         </div>
                     </div>
-                    <div data-aos="zoom-out-left"   data-aos-duration="3000" class="col-lg-6">
+                    <div data-aos="zoom-out-left" data-aos-duration="3000" class="col-lg-6">
                         <div class="d-lg-flex justify-content-between ">
-                            <div class="">
+                            <div class="pt-1">
                                 <p class="mb-0 ff_raleway fs_xsm fw-medium text_primary">Full Name*</p>
                                 <input class="fullname_input" type="text" placeholder="Full Name">
 
                             </div>
-                            <div class="">
+                            <div class="pt-1">
                                 <p class="mb-0 ff_raleway fs_xsm fw-medium text_primary">Email*</p>
                                 <input class="fullname_input" type="email" placeholder="Your Email">
                             </div>
                         </div>
                         <div class="pt-3">
                             <p class="mb-0 ff_raleway fs_xsm fw-medium text_primary">Message*</p>
-                            <textarea name="" placeholder="Write here...." cols="30" rows="10"></textarea>
+                            <textarea name="text" placeholder="Write here...." cols="30" rows="10"></textarea>
                         </div>
                         <div class="d-flex py-3  gap-2 ">
-                            <input type="checkbox" name="" id="odd">
+                            <input type="checkbox" name="checkbox" id="odd">
                             <p class="ff_raleway fs_xsm fw-medium text_primary mb-0">I agree to the <span
                                     class="text_secondary">Terms of service</span></p>
                         </div>
@@ -398,9 +415,9 @@
                         <p class="ff_raleway fs_xsm fw-normal text_primary">Lorem ipsum dolor sit amet consectetur. Sed
                             donec molestie at aliquam. Faucibus orci vestibulum </p>
                         <div class="d-flex gap-4">
-                            <a class="footer_media" href="#"> <img src="./assets/images/svg/twitter.svg" alt=""></a>
-                            <a class="footer_media" href="#"> <img src="./assets/images/svg/facebook.svg" alt=""></a>
-                            <a class="footer_media" href="#"><img src="./assets/images/svg/insta.svg" alt=""></a>
+                            <a class="footer_media" href="#"> <img src="./assets/images/svg/twitter.svg" alt="#"></a>
+                            <a class="footer_media" href="#"> <img src="./assets/images/svg/facebook.svg" alt="#"></a>
+                            <a class="footer_media" href="#"><img src="./assets/images/svg/insta.svg" alt="#"></a>
                         </div>
                     </div>
                     <div class="col-lg-4 pt-5 pt-lg-0">
@@ -426,19 +443,22 @@
                         </div>
                     </div>
                 </div>
+                <p
+                    class='ff_raleway fs_xsm fw-normal text_primary d-flex justify-content-center pt-5 mb-0 footer_upperline'>
+                    © Copyright 2022, All Rights Reserved by BitBlue</p>
             </div>
         </footer>
-         <!-- jquery -->
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-         <!-- bootstrap link  -->
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+            integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- bootstrap link  -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
             crossorigin="anonymous"></script>
-             <!-- aos link  -->
+        <!-- aos link  -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-              <!-- navbar js  -->
+        <!-- navbar js  -->
         <script>
             const nav = document.getElementById("nav_click")
 
@@ -452,37 +472,38 @@
             }
         </script>
         <!-- top btn  -->
-            <script>
+        <script>
 
-                let mybutton = document.getElementById("scrollBtn");
-    
-    
-                window.onscroll = function () { scrollFunction() };
-    
-                function scrollFunction() {
-                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                        mybutton.style.display = "block";
-                    } else {
-                        mybutton.style.display = "none";
-                    }
-                }
-                function topFunction() {
-                    document.body.scrollTop = 0;
-                    document.documentElement.scrollTop = 0;
-                }
-            </script>
-            <!-- preloader  -->
-            <script>
-             const preloader = document.getElementById("preloader")
+            let mybutton = document.getElementById("scrollBtn");
 
-             setTimeout(() => {
-                 preloader.classList.add("d-none")
-                 document.body.classList.remove("overflow-hidden")
-             }, 3000)
-         </script>
-          <script>
+
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- preloader  -->
+        <script>
+            const preloader = document.getElementById("preloader")
+
+            setTimeout(() => {
+                preloader.classList.add("d-none")
+                document.body.classList.remove("overflow-hidden")
+            }, 3000)
+        </script>
+        <script>
             AOS.init();
         </script>
+    </div>
 </body>
 
 </html>
